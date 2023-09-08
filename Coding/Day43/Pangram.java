@@ -1,0 +1,12 @@
+//Question:https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/
+class Solution {
+    public boolean checkIfPangram(String sentence) {
+        for(int i=0;i<26;i++){
+            char ch=(char)('a'+i);
+            if(sentence.indexOf(ch)==-1){
+                return false;
+            }
+        }
+        return true;
+    }
+}
